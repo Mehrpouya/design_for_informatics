@@ -1,0 +1,67 @@
+/*
+Copyright (C) 2015 Hadi Mehrpouya <http://www.hadi.link>
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
+/* 
+    Created on : 04-Oct-2015, 11:17:10
+    Author     : Hadi Mehrpouya <hadi.link>
+*/
+
+/*.slides section.has-dark-background,
+.slides section.has-dark-background h2 {
+    color: #fff;
+}
+.slides section.has-light-background,
+.slides section.has-light-background h2 {
+    color: #222;
+}*/
+.hello .big-header{
+    font-size: 2em ;
+    color: tomato;
+}
+
+
+.hello{
+    > h2{
+        font-size: 1em ;
+
+    }
+    .date{
+        font-size: .5em;
+    }
+    .date.current{
+        font-size: 0.9em;
+        color: green;
+    }
+
+    
+}
+.links{
+
+
+        figure{ 
+            display: inline-block;
+            text-align: center;
+            border: none;
+            /*float: left;*/
+            padding: 1em;
+            img{
+                height: 60px;
+            }
+            figcaption{
+                font-size: .8em;
+            }
+        }
+    }
