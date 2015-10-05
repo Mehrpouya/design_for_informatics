@@ -18,57 +18,46 @@
 
             <div class="slides">
 
-                <section class="hello" >
-                    <h2 class="big-header">Design for Informatics</h2>
-                    <h3>DESI11027</h3>
-                    <h2>Hadi Mehrpouya</h2>
-                    <h2 class="date current">7th of October 2015</h2>
-                    <h2 class="date">14th of October 2015</h2>
-                    <h2 class="date">21th of October 2015</h2>
-                    <div class="links">
-                        <figure>
-                            <a href="http://hadi.link/lectures/design-for-informatics"><img src="res/link-icon.png" ></a>
-                            <figcaption>Link to slides</figcaption>
-                        </figure>
-                        <figure>
-                            <a href="http://hadi.link"><img src="res/link-icon.png" ></a>
-                            <figcaption>Personal website</figcaption>
-                        </figure>
-                    </div>
-
-                </section>
                 <!--Purpose slide-->
                 <section data-background="#417203">
                     <section data-markdown>
-                        ##Purpose
-                        - Think about data differently
-                        - Brief overview of some of the most useful visualisation libraries
-                        - Learn [Processing software](http://processing.org/download) over the next 3 weeks
-                        - Short exercise : 
-                        - Make a bookmark folder specifically for data visualisation
-                        - Start collecting interesting visualisations 
-                        - Press down arrow and look at some of the examples from each library. think about data, visualisation teqniues, which ones you liked? bring one to our next lecture to quickly have a look together.
+                        ##For Wednesday 7th of October
+                        - Download & Install Processing
+                            - Go to [Processing download](http://processing.org/download?processing)
+                            - Scroll down to Stable Releases
+                            - Download version 2.2.1.
+                            - Choose the right operating system
+                        - If you have time press down and continue to pre exercise for this week
+                        
+                        ![right version to download](res/download.png "right version")
+
+                    </section>
+                    <section data-markdown>
+                        <h2>Short exercise </h2>
+                        - On your browser, make a bookmark folder specifically for data visualisation
+                        - Start collecting interesting visualisations
+                        - Press down arrow and look at some of the examples from each library. think about data, visualisation teqniues, which ones you liked? bring one to our next lecture to quickly have a look together
                     </section>
                     <section data-markdown>
                         ##Processing
                         #### Spend more time on Processing examples as we will be focusing more on this.
-                        browse some of the applications being made using [processing](https://processing.org/exhibition/curated_page_1.html)
+                        browse some of the applications developed with [processing](https://processing.org/exhibition/curated_page_1.html)
                     </section>
                     <section data-markdown>
                         ##IPython Notebook
-                        browse some of the applications being made using [IPython Notebook](http://ipython.org/notebook.html)
+                        browse some of the applications developed with [IPython Notebook](http://ipython.org/notebook.html)
                     </section>
                     <section data-markdown>
                         ##D3.js
-                        browse some of the applications being made using [D3.js](https://github.com/mbostock/d3/wiki/Gallery)
+                        browse some of the applications developed with [D3.js](https://github.com/mbostock/d3/wiki/Gallery)
                     </section>
                     <section data-markdown>
                         ##Raphaël.js
-                        browse some of the applications being made using [Raphael.js](http://raphaeljs.com/)
+                        browse some of the applications developed with [Raphael.js](http://raphaeljs.com/)
                     </section>
                     <section data-markdown>
                         ##Paper.js
-                        browse some of the applications being made using [Paper.js](http://paperjs.org/examples/)
+                        browse some of the applications developed with [Paper.js](http://paperjs.org/examples/)
                     </section>
                     <section >
                         <h2>Got more time?</h2>
@@ -112,130 +101,7 @@
                         </div>
                     </section>
                 </section>
-                <section>
-                    <section data-markdown>
-                        # 4*V + 2
-                        These are some of the building blocks of any data system. Remember they are subjective and you need to think about these iteratively
-                    </section>
-                    <section data-markdown>
-                        ##Volume 
-                        ###What is the size of your data?
-                    </section>
-                    <section data-markdown>
-                        ## Velocity
-                        ###How fast things are changing? 
-                        For example:
-
-                        heart-rate, weather condition, plane crashes, footsteps in evolution house
-                        ####How often / fast you need to analyse the data?
-                    </section>
-                    <section class="stretch" data-background-video="res/gorilla.mp4,res/gorilla..webm">
-                    </section>
-
-                    <section data-markdown>
-                        ##Veracity: 
-                        - Can you trust your data?
-                        - How much can you trust it? 
-                        - How much uncertainty can you deal with? Ask Chris about Ubiquity!
-                    </section>
-                    <section data-markdown>
-                        ##Variety
-                    </section>
-                    <section data-markdown>
-                        ##Vulnerability
-                    </section>
-                    <section data-markdown>
-                        ##Visualisation
-                    </section>
-                </section>
-
-
-                <section >
-                    <section>
-                        <figure>
-                            <img class="stretch" src="res/processing2.1.png" >
-                            <figcaption>Processing 2.1 overview</figcaption>
-                        </figure>
-                    </section>
-                    <section>
-                        <figure>
-                            <img class="stretch" src="res/processingAxis.png" >
-                            <figcaption>Coordinates</figcaption>
-                        </figure>
-                    </section>
-                    <section>
-                        <h2>In all Sketches</h2>
-                        <pre><code data-trim>
-void setup(){
-
-}
-void draw(){
-
-}
-    </code></pre>
-                    </section>
-                    <section>
-                        <h2>Setup function</h2>
-                        <pre><code data-trim>
-//This is how you write comments in one line.
-
-/*
-What i you want to write a whole story about your function?
-This is how you can do it without worrying about space for comments.
-*/
-void setup(){
-//Define the size of your sketch. change 200,200 to 400,200. 
-//Keep playing with the values inside size, background and fill.
-size(200, 200);
-//Define the background color.
-background(0);//you can even write a comment at the end of a line of code
-//background(255,0,0);
-noStroke();
-fill(102);
-}
-
-    </code></pre>
-                    </section>
-                    <section tagcloud>
-                        <h4>Familiarise yourself with these words</h4>
-                        loop
-                        noLoop
-                        arc
-                        ellipse
-                        line
-                        point
-                        quad
-                        rect
-                        triangle
-                        bezier
-                        curve
-                        clear
-                        fill
-                        noFill
-                        noStroke
-                        stroke
-                        displayWidth
-                        displayHeight                      
-                    </section>
-                <section tagcloud bw data-background="#417203">
-                        <h2>more words : )</h2>
-                        boolean
-                        byte
-                        char
-                        color
-                        double
-                        float
-                        int
-                        long
-                        Array
-                        ArrayList
-                        String
-                        PVector 
-                    </section>
-                </section>
-
             </div>
-
         </div>
         <script src="js/vendor/reveal.js-master/lib/js/head.min.js"></script>
         <script src="js/vendor/jquery-1.11.3.min.js"></script>

@@ -49,4 +49,15 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
   .links figure figcaption {
     font-size: .8em; }
 
+.imageList figure {
+  display: inline-block;
+  text-align: center;
+  border: none;
+  /*float: left;*/
+  padding: .5em; }
+  .imageList figure img {
+    height: 400px; }
+  .imageList figure figcaption {
+    font-size: .8em; }
+
 /*# sourceMappingURL=style.css.map */
