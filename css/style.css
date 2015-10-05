@@ -60,4 +60,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
   .imageList figure figcaption {
     font-size: .8em; }
 
+span.clouditem {
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  line-height: 100%; }
+
 /*# sourceMappingURL=style.css.map */
