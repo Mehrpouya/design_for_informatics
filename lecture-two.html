@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+
+        <title>Lecture two</title>
+
+        <link rel="stylesheet" href="js/vendor/reveal.js-master/css/reveal.css">
+        <link rel="stylesheet" href="js/vendor/reveal.js-master/css/theme/blood.css">
+        <link rel="stylesheet" href="js/vendor/reveal.js-master/lib/css/zenburn.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+
+        <div class="reveal">
+
+            <div class="slides">
+                <section class="hello" >
+                    <h2 class="big-header">Design for Informatics</h2>
+                    <h3>DESI11027</h3>
+                    <h2>Hadi Mehrpouya</h2>
+                    <h2 class="date">7th of October 2015</h2>
+                    <h2 class="date current">14th of October 2015</h2>
+                    <h2 class="date">21th of October 2015</h2>
+                    <div class="links">
+                        <figure>
+                            <a href="http://hadi.link"><img src="res/link-icon.png" ></a>
+                            <figcaption>Personal website</figcaption>
+                        </figure>
+
+                        <figure>
+                            <a href="https://twitter.com/HadiMehrpouya"><img src="res/twitter-icon.png" ></a>
+                            <figcaption>@HadiMehrpouya</figcaption>
+                        </figure>
+                        <figure>
+                            <a href="http://www.designinformatics.org/node/295"><img src="res/e_mail.png" ></a>
+                            <figcaption>h.mehrpouya</figcaption>
+                        </figure>
+                    </div>
+
+                </section>
+                <section data-background="#190a08">
+                    <section data-markdown>
+                        ## Last week we asked you to Choose one exercise or do both!
+                    </section>
+                    <section data-markdown>
+                        ##Exercise 1 
+                        ###Visualise [UoE investments](https://github.com/padzahr/uoe-investments/blob/master/data/investments.json)
+                        ###[Link](https://raw.githubusercontent.com/padzahr/uoe-investments/gh-pages/data/investments2015.json) is now updated!
+                    </section>
+                    <section data-markdown>
+                        ## Exercise 2
+                        ### Collect data on comparative use of the two discussed sets of steps
+                    </section>
+                </section>
+                <section data-markdown data-background="#417203">
+                    ## How did it go?
+                </section>
+                <section data-markdown data-background="#190a08">
+                    ## Any Questions from last week?
+                </section>
+                <section>
+                    <section tagcloud data-background="#0f2e28">
+                        <h4>You now know</h4>
+                        loop
+                        noLoop
+                        arc
+                        ellipse
+                        line
+                        point
+                        quad
+                        rect
+                        triangle
+                        bezier
+                        curve
+                        clear
+                        fill
+                        noFill
+                        noStroke
+                        stroke
+                        displayWidth
+                        displayHeight                      
+                    </section>
+                    <section tagcloud data-background="#0f2a2e">
+                        <h4>Also know</h4>
+                        boolean
+                        byte
+                        char
+                        color
+                        double
+                        float
+                        int
+                        long
+                        Array
+                        ArrayList
+                        String
+                        PVector 
+                    </section>
+                    <section tagcloud data-background="#210f2e" >
+                        <h4>And these too</h4>
+                        Relational Operators
+                        != 
+                        < 
+                        <= 
+                        == 
+                        > 
+                        >= 
+                        Iteration
+                        for
+                        while
+                        Conditionals
+                        break
+                        case
+                        ?: 
+                        continue
+                        default
+                        else
+                        if
+                        switch
+                    </section>
+                </section>
+                <section data-background="#070a15">
+                    <section data-markdown  data-background="#0f2e28">
+                        ###Data standardised formats
+                        - XML
+                        - JSON
+                        - CSV, TSV ...
+                        - Base64, Base_anything
+                        - Many more...
+                    </section>
+                    <section data-markdown data-background="#0f2e28">
+                        ###Database models
+                        - Relational model
+                        - Hierarchical  model (Each child only one parent)
+                        - Network model
+                        - Graph model
+                        - ...
+                    </section>
+                    <section tagcloud data-background="#0f2e28">
+                        <h3>DBMS</h3> 
+                        MySQL
+                        PostgreSQL
+                        Microsoft SQL
+                        Oracle
+                        MondoDb
+                        SPARQL
+                    </section>
+                </section>
+                <section>
+
+                    <section data-markdown>
+                        #[XML, XSLT, XPath](http://www.w3schools.com/xml/xml_display.asp)
+                    </section>
+                    <section>
+                        <pre><code data-trim>
+<note>
+<to>Students</to>
+<from>Hadi</from>
+<heading>Reminder</heading>
+<body>Remember to work on your exercise</body>
+</note>
+</code>
+                        </pre>
+                    </section>
+                    <section>
+                        <pre><code data-trim>
+                        <breakfast_menu>
+<food>
+<name>Belgian Waffles</name>
+<price>$5.95</price>
+<description>
+Two of our famous Belgian Waffles with plenty of real maple syrup
+</description>
+<calories>650</calories>
+</food>
+<food>
+<name>Strawberry Belgian Waffles</name>
+<price>$7.95</price>
+<description>
+Light Belgian waffles covered with strawberries and whipped cream
+</description>
+<calories>900</calories>
+</food>
+</breakfast_menu>
+</code></pre>
+                    </section>
+                </section>
+                <section>
+
+                    <section data-markdown>
+                        #[JSON](http://www.w3schools.com/json/)
+                    </section>
+                    <section>
+                        <pre><code data-trim>
+{
+  "investments": [
+{"name":"BHP BILLITON PLC", "amount":906857,"type":"mining,metals,petrolium",
+    "info":"Anglo-Australian multinational mining, metals and petroleum company headquartered in Melbourne, Australia."},
+{"name":"COLRUYT SA", "amount":728644,"type":"food service,wholesale trade",
+    "info":"Colruyt NV/SA, together with its subsidiaries, is engaged in the retail and wholesale trade, and food service activities in Belgium, France, and internationally."},
+{"name":"SOFINA SA", "amount":324375,"type":"holding company",
+    "info":"Sofina SA is a Belgium-based holding company that invests, directly and indirectly, in companies from various sectors."},
+{"name":"GROUPE BRUXELLES LAMBERT SA", "amount":1790928,"type":"holding company",
+    "info":"Groupe Bruxelles Lambert SA is a Belgium-based holding company with a portfolio of industrial investments, focusing on a small number of European companies that operate in a diversified range of sectors. At the end of fiscal year 2012, the Company's portfolio consisted of six principal share holdings: GDF Suez, Total, Lafarge, Pernod Ricard, Imerys and Suez Environnement. Other shareholdings included an interest in Arkema and Iberdrola. GBL has wholly owned subsidiaries in the Netherlands, Belgium, Germany, Luxembourg and Ireland, among others. "},
+{"name":"HISCOX LTD", "amount":796434,"type":"insurance"]}
+</code>
+                        </pre>
+                    </section></section>
+                <section>
+
+                    <section data-markdown>
+                        #CSV
+                    </section>
+                    <section>
+                        <pre><code data-trim>
+apple,banana,potato
+</code>
+                        </pre>
+                    </section></section>
+                <section>
+                    <section data-markdown>
+                        #Exercise again!
+                    </section>
+                    <section data-markdown>
+                        ### Steps data from council
+                        - Get it from your learn
+                        - Import it to processing
+                        - Try and write code to read it
+                    </section>
+                </section>
+                <section>
+                    <h2><a href="res/software.zip" download> Download me</a> </h2>
+                </section>
+            </div>
+
+        </div>
+        <script src="js/vendor/reveal.js-master/lib/js/head.min.js"></script>
+        <script src="js/vendor/jquery-1.11.3.min.js"></script>
+        <script src="js/vendor/reveal.js-master/plugin/highlight/highlight.js"></script>
+        <script src="js/vendor/reveal.js-master/plugin/markdown/marked.js"></script>
+        <script src="js/vendor/reveal.js-master/plugin/markdown/markdown.js"></script>
+        <script src="js/vendor/reveal.js-master/js/reveal.js"></script>
+        <script src="js/vendor/reveal.js-master/plugin/zoom-js/zoom.js"></script>
+        <script src="js/vendor/reveal.js-master/plugin/tagcloud/tagcloud.js"></script>
+        <script src="js/vendor/reveal.js-master/plugin/notes/notes.js"></script>
+        <script>
+
+            Reveal.initialize({
+                history: true,
+                transition: 'slide',
+                // Display controls in the bottom right corner
+                controls: true,
+                // Display a presentation progress bar
+                progress: true,
+                // Enable keyboard shortcuts for navigation
+                keyboard: true,
+                // Enable the slide overview mode
+                overview: true,
+                // Vertical centering of slides
+                center: true,
+                // Enables touch navigation on devices with touch input
+                touch: true,
+                // Loop the presentation
+                loop: false,
+                // Change the presentation direction to be RTL
+                rtl: false,
+                // Turns fragments on and off globally
+                fragments: true,
+                // Flags if the presentation is running in an embedded mode,
+                // i.e. contained within a limited portion of the screen
+                embedded: false,
+                // Flags if we should show a help overlay when the questionmark
+                // key is pressed
+                help: true,
+                // Flags if speaker notes should be visible to all viewers
+                showNotes: false,
+                // Hides the address bar on mobile devices
+                hideAddressBar: true,
+                // Opens links in an iframe preview overlay
+                previewLinks: false,
+                transitionSpeed: 'slow',
+                //                backgroundTransition: 'slide'
+                // Zoom in and out with Alt+click
+                dependencies: [
+                    {src: 'js/vendor/reveal.js-master/plugin/zoom-js/zoom.js', async: true},
+                    {src: 'js/vendor/reveal.js-master/plugin/highlight/highlight.js', async: true, callback: function () {
+                            hljs.initHighlightingOnLoad();
+                        }},
+                    {src: 'js/vendor/reveal.js-master/plugin/tagcloud/tagcloud.js', async: true}
+
+                ]
+            });
+        </script>
+
+    </body>
+</html>
