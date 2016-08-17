@@ -14,7 +14,7 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
-/* 
+/*
     Created on : 04-Oct-2015, 11:17:10
     Author     : Hadi Mehrpouya <hadi.link>
 */
@@ -64,5 +64,17 @@ span.clouditem {
   padding-left: 0.5em;
   padding-right: 0.5em;
   line-height: 100%; }
+
+  .textAndimage .Andimage{
+    max-width: 60%;
+    float: left;
+    max-height: 700px;
+  }
+  .textAndimage .textAnd {
+    padding-top: 20px;
+    width: 35%;
+    float: right;
+    font-size: 24px;
+  }
 
 /*# sourceMappingURL=style.css.map */
