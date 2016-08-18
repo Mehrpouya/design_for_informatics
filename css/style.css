@@ -78,3 +78,6 @@ span.clouditem {
   }
 
 /*# sourceMappingURL=style.css.map */
+section img {
+  max-height: 500px;
+}
