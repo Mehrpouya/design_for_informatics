@@ -32,8 +32,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 .hello > h2 {
   font-size: 1em; }
+
 .hello .date {
   font-size: .5em; }
+
 .hello .date.current {
   font-size: 0.9em;
   color: green; }
@@ -44,10 +46,12 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
   border: none;
   /*float: left;*/
   padding: 1em; }
-  .links figure img {
-    height: 60px; }
-  .links figure figcaption {
-    font-size: .8em; }
+
+.links figure img {
+  height: 60px; }
+
+.links figure figcaption {
+  font-size: .8em; }
 
 .imageList figure {
   display: inline-block;
@@ -55,29 +59,46 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
   border: none;
   /*float: left;*/
   padding: .5em; }
-  .imageList figure img {
-    height: 400px; }
-  .imageList figure figcaption {
-    font-size: .8em; }
+
+.imageList figure img {
+  height: 400px; }
+
+.imageList figure figcaption {
+  font-size: .8em; }
 
 span.clouditem {
   padding-left: 0.5em;
   padding-right: 0.5em;
   line-height: 100%; }
 
-  .textAndimage .Andimage{
-    max-width: 60%;
-    float: left;
-    max-height: 700px;
-  }
-  .textAndimage .textAnd {
-    padding-top: 20px;
-    width: 35%;
-    float: right;
-    font-size: 24px;
-  }
+.textAndimage .Andimage {
+  max-width: 60%;
+  float: left;
+  max-height: 700px; }
+
+.textAndimage .textAnd {
+  padding-top: 20px;
+  width: 35%;
+  float: right;
+  font-size: 24px; }
 
 /*# sourceMappingURL=style.css.map */
 section img {
-  max-height: 500px;
-}
+  height: 500px; }
+
+section h2 + img {
+  height: 300px; }
+
+.normImg {
+  height: 100px; }
+
+.normalisedImg {
+  height: 500px; }
+
+.normalisedImg img {
+  height: 500px; }
+
+.normalisedImg a img {
+  height: 500px; }
+
+/*# sourceMappingURL=style.css.map */
