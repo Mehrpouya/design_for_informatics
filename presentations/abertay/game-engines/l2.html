@@ -96,58 +96,42 @@
         <section data-markdown>
           ## [Landscape](https://docs.unrealengine.com/latest/INT/Engine/Landscape/QuickStart/3/index.html)
         </section>
-        <section tagcloud data-background="#0f2a2e">
-          Landscape gizmo
-          Hydraulic action
-          clastic sediment
-          solutes
-          landslides
+        <section data-markdown data-background="#0f2a2e">
+            ###Today
+            - Look at Landscape tool in UE4
+            - Mesh
+            - Heightmaps
+            - Noise
+            - Erosions
         </section>
-        <section tagcloud data-background="#0f2a2e">
-        </section>
+      </section>
 
-      </section>
-      <section data-background="#0f2a2e">
-        <section data-markdown>
-          ##Landscape
-          - Create a new project
-          - Create an empty level (Ctrl + N || Menu=>file=>new level)
-          - Add an atmospheric fog, so it is not pitch black!
 
-          <!-- - Download 3 sets of textures with their normals. For example [here](http://opengameart.org/content/50-free-textures-4-normalmaps?page=1) -->
-
-        </section>
-        <section data-markdown>
-          ##Spend some time playing with Sculpt tools
-        </section>
-        <section data-markdown>
-        </section>
-      </section>
-      <section data-background="#0f2a2e">
-        <section data-markdown>
-          ##Important interactions
-          - Ctrl
-          - Left mouse button: **heightens || increases**
-          - Shift + Left mouse button: **lowers || decreases**
-          - Ctrl + Z: **undo**
-          - Ctrl + Y: **redo**
-        </section>
-      </section>
-      <section data-background="#0f2a2e">
-        <section data-markdown tagcloud data-background="#0f2a2e">
-          Noise
-          Mesh
-          Proxy models
-          Erosions
-        </section>
-      </section>
       <section data-background="#0f2a2e">
         <section data-markdown>
           ###Noise
         </section>
         <section data-markdown>
-
+          ####Examples of noise use
+          - surfaces
+          - fire
+          - smoke
+          - clouds
+          - [concentration/relaxation](https://mynoise.net/NoiseMachines/)
         </section>
+        <section data-markdown>
+          ####Other examples
+          - Gambling
+          - Access to information [Wikipedia random](https://en.wikipedia.org/wiki/Wikipedia:Random)
+          - Procedurally generated landscapes/sandscapes [No man's sky](http://www.newyorker.com/tech/elements/what-a-dragons-mating-scream-sounds-like)
+        </section>
+        <section data-markdown>
+          ###Techniques for producing noise/randomness
+          - [Randomness](https://www.random.org/randomness/)
+          - Perlin
+          - Have a search on google and find out more. This is very mathematical, so if you are keen, you can do more search on google scholar and read some fun papers on it.
+        </section>
+
       </section>
       <section data-background="#0f2a2e">
         <section data-markdown>
@@ -156,7 +140,11 @@
         <section data-markdown>
           - Splash of drops
           - Sediment movement
-
+          - Rain
+          - Sea & Waves
+          - Rivers
+          - Wind
+          - Landslides
         </section>
         <section data-markdown>
           ###Wind erosion
@@ -172,14 +160,129 @@
         </section>
         <section data-markdown>
           ### What affects the landscape
-          -Soil
-          -Vegetation
-          -Climate change
-          -Characteristics of the landscape
-          -Animal life
+          - Soil
+          - Vegetation
+          - Climate change
+          - Characteristics of the landscape
+          - Animal life
+          - Civilisation (roads, trains, architecture, pokemon enthusiasts)
+          - Agriculture
         </section>
-
+        <section data-markdown>
+          ##Does it matter?
+        </section>
+        <section data-markdown>
+          ![Wind erosion](/presentations/res/game-engines/l2Res/example.jpg)
+        </section>
       </section>
+      <section data-background="#0f2a2e">
+        <section data-markdown>
+          ##Landscape
+          - Create a new project
+          - Create an empty level (Ctrl + N || Menu=>file=>new level)
+          - Add an atmospheric fog, so it is not pitch black!
+        </section>
+        <section data-markdown>
+          ##Spend some time playing with Sculpt tools
+        </section>
+        <section data-markdown>
+          ##Important interactions
+          - Ctrl
+          - Left mouse button: **heightens || increases**
+          - Shift + Left mouse button: **lowers || decreases**
+          - Ctrl + Z: **undo**
+          - Ctrl + Y: **redo**
+        </section>
+      </section>
+      <section data-background="#0a2c2f">
+        <section data-markdown>
+          ###Painting your landscape
+          - Download landscape material:
+            - [compressed as 7z](/presentations/res/game-engines/l2Res/content/landscapeMaterial.7z)
+            - [compressed as tar](/presentations/res/game-engines/l2Res/content/landscapeMaterial.tar)
+            - [compressed as zip](/presentations/res/game-engines/l2Res/content/landscapeMaterial.zip)
+          - Extract/decompress the downloaded file
+          - Copy the contents inside your unreal project folder
+          - Fix the my_landscape_material links to the textures. You do this, by double clicking on the landscape_material and we will cover the process in the class.
+        </section>
+      </section>
+      <section data-background="#5555f0">
+        <section data-markdown>
+          #Assignment
+        </section>
+        <section data-markdown>
+          ### Week 2 assignment must be **Submitted by Friday 23rd of Sep 2016**
+          - Make me an amazing landscape
+            - Have a quick think where your landscape is based (erosions, climate,...)
+          - Creat, edit and paint it
+          - Delete parts that you don't need from the landscape mesh
+          </section>
+          <section data-markdown>
+            ###Submission
+            - Take two screenshots:
+              - One from eagle eye view, above the landscape, so I can see the whole thing
+              - Another one, a view of your choice from your landscape that you'd like to show me
+            - Submit a blog with 140 characters description. What you say in your blog should be a self mark, based on your rubric that I published earlier this week.
+              - For example: Excellent use of landscape tools and excelent use of Grass tools.
+            - Please do not attache the images, put them inside the blog itself. If not sure how to do it, ask me and I'll show you.
+          </section>
+      </section>
+      <section data-background="#0a2c2f">
+        <section data-markdown>
+          # Extras
+        </section>
+        <section data-markdown>
+          ## Hole material
+          Follow this [tutorial](https://docs.unrealengine.com/latest/INT/Engine/Landscape/Materials/index.html#landscapeholematerials) and add hole material to your landscape
+        </section>
+        <section data-markdown>
+          ## Grass tool
+          ![Grass](https://docs.unrealengine.com/latest/images/Engine/OpenWorldTools/Grass/QuickStart/T_Grass_Intro.jpg)
+
+          Follow this [tutorial](https://docs.unrealengine.com/latest/INT/Engine/OpenWorldTools/Grass/QuickStart/) and add eye guzzling grass to your landscape
+        </section>
+        <section data-markdown>
+          ## How about forests
+          ![Forrest](https://docs.unrealengine.com/latest/images/Engine/OpenWorldTools/ProceduralFoliage/QuickStart/T_PF_QS_Final_Product.jpg)
+
+          Follow this [tutorial](https://docs.unrealengine.com/latest/INT/Engine/OpenWorldTools/ProceduralFoliage) and add some forrests
+        </section>
+        <section data-markdown>
+          ## Also have a look at custom made heightmaps
+          Here is a [tutorial](https://docs.unrealengine.com/latest/INT/Engine/Landscape/Custom/) about it
+        </section>
+      </section>
+      <section data-background="#65d26f">
+        <section >
+          <h3>Open office</h3>
+          <ul>
+            <li>
+              Every Wednesday between 10AM-12PM
+            </li>
+            <li>
+              <a href="http://doodle.com/poll/7v76uhz3pv5a8ngf" target="_blank" >Doodle</a>
+            </li>
+            <li>
+              Does this work for everyone? If not email and we can arrange another time
+            </li>
+
+        </ul>
+        </section>
+        <section data-markdown>
+          ###Assignment related issues
+          - I added a discussion forum for us. You can ask questions there. There are 7 posts, one for each week assignmnet (6) + 1 for presentation
+          - Remember this is not your point of reference for your courseworks. You must always read the assignment briefs
+        </section>
+        <section data-markdown>
+          #Thank you
+          ##See you next week
+          
+          Make sure you look after yourselves, It is easy to overwork and forget about the wee pub around the corner/cinema/friend/fox...
+
+        </section>
+      </section>
+
+
     </div>
 
   </div>
