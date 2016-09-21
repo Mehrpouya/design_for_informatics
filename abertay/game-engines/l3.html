@@ -6,10 +6,10 @@
 
   <title>Lectorial two</title>
 
-  <link rel="stylesheet" href="/js/vendor/reveal.js-master/css/reveal.css">
-  <link rel="stylesheet" href="/js/vendor/reveal.js-master/css/theme/blood.css">
-  <link rel="stylesheet" href="/js/vendor/reveal.js-master/lib/css/zenburn.css">
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/presentations/js/vendor/reveal.js-master/css/reveal.css">
+  <link rel="stylesheet" href="/presentations/js/vendor/reveal.js-master/css/theme/blood.css">
+  <link rel="stylesheet" href="/presentations/js/vendor/reveal.js-master/lib/css/zenburn.css">
+  <link rel="stylesheet" href="/presentations/css/style.css">
 </head>
 
 <body>
@@ -23,15 +23,51 @@
         <h4>School of Arts, Media and Games</h4>
         <h2>Hadi Mehrpouya</h2>
         <h2 class="date current">23rd of September 2016</h2>
-        <a href="http://www.abertay.ac.uk/"><img class="normImg" src="/res/logos/abertay.png"></a>
+        <a href="http://www.abertay.ac.uk/"><img class="normImg" src="/presentations/res/logos/abertay.png"></a>
       </section>
 
       <section data-background="#0f2a2e">
         <section data-markdown>
+          ##Landscape material
+        </section>
+        <section data-markdown>
           - Material Expression Nodes
-          - HLSL code
+          - Expressions or HLSL code
+          - Values between 0-1 in UE4
+          - Opaque, Light won't pass or penetrate. Translucent, masked
           - Refraction: bent of light ray when it enters different substances
           - Material instance: UE4 feature, so you can save processing two materials by making instances of one material and changing top level parameters.
+        </section>
+        <section data-markdown>
+        ##Translucent -> Smoke or glass.
+          - cubemap
+        </section>
+        <section data-markdown>
+        ##Additive -> fire
+
+        </section>
+        <section data-markdown>
+        ##Modular
+
+        </section>
+        <section data-markdown>
+        ##Lighting models
+
+        </section>
+        <section data-markdown>
+        ##Lighting models
+
+        </section>
+        <section data-markdown>
+        ##physics of lighting, what is normals
+
+        </section>
+        <section data-markdown>
+        ##[Refraction](https://docs.unrealengine.com/latest/INT/Resources/ContentExamples/MaterialNodes/1_14/index.html)
+        - Make a soda lime glass
+        - Diamond
+        - Pool filled with Olive oil!
+
         </section>
         <section data-markdown>
           ###What are the components of materials?
@@ -39,6 +75,7 @@
 
           - Interesting list http://www.robinwood.com/Catalog/Technical/Gen3DTuts/Gen3DPages/RefractionIndexList.html
         </section>
+
         <section data-background="#000">
           <h2>B</h2>
           <iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/RmPG9tfkxDU?rel=0&amp;showinfo=0 " frameborder="0" allowfullscreen></iframe>
@@ -87,15 +124,15 @@
     </div>
 
   </div>
-  <script src="/js/vendor/reveal.js-master/lib/js/head.min.js"></script>
-  <script src="/js/vendor/jquery-1.11.3.min.js"></script>
-  <script src="/js/vendor/reveal.js-master/plugin/highlight/highlight.js"></script>
-  <script src="/js/vendor/reveal.js-master/plugin/markdown/marked.js"></script>
-  <script src="/js/vendor/reveal.js-master/plugin/markdown/markdown.js"></script>
-  <script src="/js/vendor/reveal.js-master/js/reveal.js"></script>
-  <script src="/js/vendor/reveal.js-master/plugin/zoom-js/zoom.js"></script>
-  <script src="/js/vendor/reveal.js-master/plugin/tagcloud/tagcloud.js"></script>
-  <script src="/js/vendor/reveal.js-master/plugin/notes/notes.js"></script>
+  <script src="/presentations/js/vendor/reveal.js-master/lib/js/head.min.js"></script>
+  <script src="/presentations/js/vendor/jquery-1.11.3.min.js"></script>
+  <script src="/presentations/js/vendor/reveal.js-master/plugin/highlight/highlight.js"></script>
+  <script src="/presentations/js/vendor/reveal.js-master/plugin/markdown/marked.js"></script>
+  <script src="/presentations/js/vendor/reveal.js-master/plugin/markdown/markdown.js"></script>
+  <script src="/presentations/js/vendor/reveal.js-master/js/reveal.js"></script>
+  <script src="/presentations/js/vendor/reveal.js-master/plugin/zoom-js/zoom.js"></script>
+  <script src="/presentations/js/vendor/reveal.js-master/plugin/tagcloud/tagcloud.js"></script>
+  <script src="/presentations/js/vendor/reveal.js-master/plugin/notes/notes.js"></script>
   <script>
 
   Reveal.initialize({
@@ -135,11 +172,11 @@
     //                backgroundTransition: 'slide'
     // Zoom in and out with Alt+click
     dependencies: [
-      {src: '/js/vendor/reveal.js-master/plugin/zoom-js/zoom.js', async: true},
-      {src: '/js/vendor/reveal.js-master/plugin/highlight/highlight.js', async: true, callback: function () {
+      {src: '/presentations/js/vendor/reveal.js-master/plugin/zoom-js/zoom.js', async: true},
+      {src: '/presentations/js/vendor/reveal.js-master/plugin/highlight/highlight.js', async: true, callback: function () {
         hljs.initHighlightingOnLoad();
       }},
-      {src: '/js/vendor/reveal.js-master/plugin/tagcloud/tagcloud.js', async: true}
+      {src: '/presentations/js/vendor/reveal.js-master/plugin/tagcloud/tagcloud.js', async: true}
 
     ]
   });
