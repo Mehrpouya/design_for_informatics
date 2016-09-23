@@ -62,6 +62,10 @@
           </div>
         </section>
       </section>
+      <section data-background="#000">
+        <h2>B</h2>
+        <iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/RmPG9tfkxDU?rel=0&amp;showinfo=0 " frameborder="0" allowfullscreen></iframe>
+      </section>
       <section data-background="#0f2a2e">
         <section data-markdown>
           ##Last week
@@ -71,37 +75,73 @@
         </section>
       </section>
       <section data-background="#0f2a2e">
-        <section data-markdown>
+        <section>
           ##Landscape material
         </section>
         <section data-markdown>
-          - Material Expression Nodes
-          - Expressions or HLSL code
-          - Values between 0-1 in UE4
-          - Opaque, Light won't pass or penetrate. Translucent, masked
+          ###Let's [familiarise](https://docs.unrealengine.com/latest/INT/Engine/Rendering/Materials/Editor/Interface/index.html) ourselves with Material Editor first
+          ![Chair](/presentations/res/game-engines/l3Res/chair.png)
+        </section>
+        <section data-markdown data-background="#0f2a2e">
+          ###Interaction keys
+          - Mouse, all keys
+          - Pay attention to shortcuts when you add things in
+          - Make sure you use the search funciton of unreal. VERY USEFULL
+          - For useing shortcuts, hold the keyboard key down + left click.
+          - alt/ctrl + left click to delete/move connections.
+        </section>
+        <section tagcloud data-background="#0f2a2e">
+          Material Expression Nodes
+          HLSL
+          [Refraction](https://docs.unrealengine.com/latest/INT/Engine/Rendering/Materials/HowTo/Refraction/)
+          [Textures](https://docs.unrealengine.com/latest/INT/Engine/Rendering/Materials/ExpressionReference/Textures/)
+          [Commenting](https://docs.unrealengine.com/latest/INT/Videos/PLZlv_N0_O1gbQjgY0nDwZNYe_N8IcYWS-/FGug7MpFYPc/index.html)
+          [Material parameters](https://docs.unrealengine.com/latest/INT/Engine/Rendering/Materials/ParameterCollections/)
+          UV channel
+          [Material Instance](https://docs.unrealengine.com/latest/INT/Engine/Rendering/Materials/MaterialInstances/)
+          [Material functions](https://docs.unrealengine.com/latest/INT/Engine/Rendering/Materials/Functions/index.html)
+        </section>
+        <section data-markdown>
+          - Expressions are snippets of HLSL code (High Level Shading Language)
+          - Remember values are normally between 0-1 in UE4
+
           - Refraction: bent of light ray when it enters different substances
           - Material instance: UE4 feature, so you can save processing two materials by making instances of one material and changing top level parameters.
         </section>
-        <section data-markdown>
-        ##Translucent -> Smoke or glass.
-          - cubemap
+        <section>
+          <a href="https://docs.unrealengine.com/latest/INT/Engine/Rendering/Materials/HowTo/index.html" target="_blank"><h2>Material How-to's</h2></a>
+        </section>
+        <section>
+          <h2><a href="https://docs.unrealengine.com/latest/INT/Engine/Rendering/Materials/MaterialProperties/BlendModes/" target="_blank"></a></h2>
         </section>
         <section data-markdown>
-        ##Additive -> fire
+          ##Opaque
+          Light doesn't pass through and doesn't penetrate.
+          ![Plastic](/presentations/res/game-engines/l3Res/plastic.jpg)
 
+          metal, plastics, most things.
         </section>
         <section data-markdown>
-        ##Modular
+          ##Masked
+          Not transparent. Good for saving GPU time. No reflections!
 
+          ![Fence](/presentations/res/game-engines/l3Res/fence.jpeg)
         </section>
         <section data-markdown>
-        ##Lighting models
+          ##Translucent
+          Transparent, but no specularity
 
+          ![curtain](/presentations/res/game-engines/l3Res/curtain.jpeg)
         </section>
         <section data-markdown>
-        ##Lighting models
+          ##Additive & Modulate
+          Additive: adds pixels & Mudulate: multiplies!
 
+          ![Fence](/presentations/res/game-engines/l3Res/hologram.jpg)
+
+          holograms,...
         </section>
+
         <section data-markdown>
         ##physics of lighting, what is normals
 
@@ -111,31 +151,30 @@
         ##[Refraction](https://docs.unrealengine.com/latest/INT/Resources/ContentExamples/MaterialNodes/1_14/index.html)
         </section>
         <section data-markdown>
-        ##Based on refraction Index, try:
-        - Make a soda lime glass
+        ###Look at:
+        ####[refraction Index](http://www.robinwood.com/Catalog/Technical/Gen3DTuts/Gen3DPages/RefractionIndexList.html) & [Material Parameters](https://docs.unrealengine.com/latest/INT/Engine/Rendering/Materials/PhysicallyBased/)
+
+        Make material for:
+        - a soda lime glass
         - Diamond
         - Pool filled with Olive oil!
 
         </section>
+
         <section data-markdown>
-        ##Glow
-        ##Lerp
-        ##Vertex Color
-        ##Panner
-        ##-1
-        ##Noise
-
+        ##Some expresions and effects
         </section>
-        <section data-markdown>
-          ###What are the components of materials?
-          -Texture(s)
+        <section tagcloud data-background="#334">
+          Glow
+          Lerp
+          Vertex Color
+          Panner
+          -1
+          Noise
+          add
+          multiply
+          desaturation
 
-          - Interesting list http://www.robinwood.com/Catalog/Technical/Gen3DTuts/Gen3DPages/RefractionIndexList.html
-        </section>
-
-        <section data-background="#000">
-          <h2>B</h2>
-          <iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/RmPG9tfkxDU?rel=0&amp;showinfo=0 " frameborder="0" allowfullscreen></iframe>
         </section>
         <section data-markdown>
           ###Texture formats
@@ -149,13 +188,6 @@
           - exr
           - dds - Cubemap Texture (32bits/Channel, 8.8.8.8 ARGB 32 bpp, unsigned) See Cubemap Tools for more information.
           - hdr - Cubemap Texture (LongLat unwrap)
-        </section>
-        <section data-markdown>
-        ##UV channel
-        </section>
-        <section data-markdown>
-        ##Instance material
-
         </section>
       </section>
       <section data-background="#535a12">
@@ -173,26 +205,32 @@
 
           ![Cinema](/presentations/res/game-engines/l3Res/cinema.jpg)
 
-          Make this cinema for me please!
+          Make this cinema for me please! or anything else you like, but it should show you learned!
 
         </section>
         <section data-markdown>
           ###Assignment details
           - Use different lightings
-          - Make things glow
-          - Make use of material instance
+          - Make some things glow
+          - Make use of material instances
           - Program a few new materials
-          - Make the curtain move
-          - The cinema should be on a painted landscape
-          - You don't need any extra models, nor textures. Use what you have inside starter content.
+          - Mate a curtain material that give an illusion of curtain wave movements
+          - You don't need any extra models, no new textures. Use what you have inside starter content.
           - Be creative
         </section>
-        <section data-markdown>
-          ##Watch list
-          - [Material 1](http://www.digitaltutors.com/tutorial/1702-Unreal-Engine-4-Material-Reference-Node-Library#play-43557)
-          - [Material 2](http://www.digitaltutors.com/tutorial/1646-Introduction-to-Materials-in-Unreal-Engine)
-          - [Making rocks](http://www.digitaltutors.com/tutorial/2013-Creating-Rock-Structures-for-Games-in-ZBrush-and-Unreal-Engine)
-        </section>
+
+      </section>
+      <section data-markdown>
+        ##Watch list
+        - [Material 1](http://www.digitaltutors.com/tutorial/1702-Unreal-Engine-4-Material-Reference-Node-Library#play-43557)
+        - [Material 2](http://www.digitaltutors.com/tutorial/1646-Introduction-to-Materials-in-Unreal-Engine)
+        - [Detailed Texturing](https://docs.unrealengine.com/latest/INT/Engine/Rendering/Materials/HowTo/DetailTexturing/)
+        - [Cube maps](https://docs.unrealengine.com/latest/INT/Engine/Content/Types/Textures/Cubemaps/index.html)
+        - [Making rocks](http://www.digitaltutors.com/tutorial/2013-Creating-Rock-Structures-for-Games-in-ZBrush-and-Unreal-Engine)
+        - [More](https://docs.unrealengine.com/latest/INT/Engine/Rendering/Materials/)
+      </section>
+      <section data-markdown>
+        ##Thanks and see you next week
       </section>
     </div>
 
