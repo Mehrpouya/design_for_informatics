@@ -4,12 +4,12 @@
 <head>
   <meta charset="utf-8">
 
-  <title>Lectorial four</title>
+  <title>Lectorial five</title>
 
-  <link rel="stylesheet" href="/presentations/js/vendor/reveal.js-master/css/reveal.css">
-  <link rel="stylesheet" href="/presentations/js/vendor/reveal.js-master/css/theme/blood.css">
-  <link rel="stylesheet" href="/presentations/js/vendor/reveal.js-master/lib/css/zenburn.css">
-  <link rel="stylesheet" href="/presentations/css/style.css">
+  <link rel="stylesheet" href="/~h517352/presentations/js/vendor/reveal.js-master/css/reveal.css">
+  <link rel="stylesheet" href="/~h517352/presentations/js/vendor/reveal.js-master/css/theme/blood.css">
+  <link rel="stylesheet" href="/~h517352/presentations/js/vendor/reveal.js-master/lib/css/zenburn.css">
+  <link rel="stylesheet" href="/~h517352/presentations/css/style.css">
 </head>
 
 <body>
@@ -23,28 +23,41 @@
         <h4>School of Arts, Media and Games</h4>
         <h2>Hadi Mehrpouya</h2>
         <h2 class="date current">7th of October 2016</h2>
-        <a href="http://www.abertay.ac.uk/"><img class="normImg" src="/presentations/res/logos/abertay.png"></a>
+        <a href="http://www.abertay.ac.uk/"><img class="normImg" src="/~h517352/presentations/res/logos/abertay.png"></a>
       </section>
       <section data-background="#444">
         <section data-markdown>
           #Presentations
         </section>
-        <section >
+        <section>
           <div class="links">
               <figure>
-                  <a href="/presentations/res/game-engines/l5Res/presentations/matthew_mcauley_battlefield_4.pptx" target="_blank"><img class="normImg" src="/presentations/res/game-engines/ppt.png"></a>
+                  <a href="/~h517352/presentations/res/game-engines/l5Res/presentations/matthew_mcauley_battlefield_4.pptx" target="_blank"><img class="normImg" src="/~h517352/presentations/res/game-engines/ppt.png"></a>
                   <figcaption>Matthew Mcauley</br> Battlefield 4</figcaption>
               </figure>
               <figure>
-                  <a href="/presentations/res/game-engines/l5Res/presentations/Joy_Ajoung_Assassins_Creed_2.pptx" target="_blank"><img class="normImg" src="/presentations/res/game-engines/ppt.png"></a>
+                  <a href="/~h517352/presentations/res/game-engines/l5Res/presentations/Joy_Ajoung_Assassins_Creed_2.odp" target="_blank"><img class="normImg" src="/~h517352/presentations/res/game-engines/ppt.png"></a>
                   <figcaption>Joy Ajoung</br>Assassin's Creed 2</figcaption>
               </figure>
               <figure>
-                  <a href="/presentations/res/game-engines/l4Res/presentations/Ross_McRitchie_Red_Dead_Redemption.pptx" target="_blank"><img class="normImg" src="/presentations/res/game-engines/ppt.png"></a>
-                  <figcaption>Ross McRitchie</br>Red Dead Redemption</figcaption>
+                  <a href="/~h517352/presentations/res/game-engines/l5Res/presentations/Marcus_YoungSmith_DYING_LIGHT.pptx" target="_blank"><img class="normImg" src="/~h517352/presentations/res/game-engines/ppt.png"></a>
+                  <figcaption>Marcus Young Smith</br>Dying Light</figcaption>
               </figure>
             </div>
-          </section>
+        </section>
+        <section>
+          <div class="links">
+              <figure>
+                  <a href="/~h517352/presentations/res/game-engines/l5Res/presentations/Simon_Wood_Resident_Evil.ppt" target="_blank"><img class="normImg" src="/~h517352/presentations/res/game-engines/ppt.png"></a>
+                  <figcaption>Simon Wood</br>Resident Evil</figcaption>
+              </figure>
+              <figure>
+                  <a href="https://docs.google.com/presentation/d/1JkWYBen0DbsnlB6m6-Ar9iv8pVXDBxaVlyIJoHEpHEY/edit?usp=sharing" target="_blank"><img class="normImg" src="/~h517352/presentations/res/game-engines/gp.png"></a>
+                  <figcaption>Kenneth Mclean</br>AnvilNext Engine</figcaption>
+              </figure>
+            </div>
+        </section>
+
       </section>
       <section data-background="#0f2a2e">
         <section data-markdown>
@@ -59,146 +72,93 @@
       <section data-background="#0a2c2c">
         <section data-markdown>
           ## Today
-          -AI
-            -AI character blueprint
-            -AI controller
-            -behaviour trees
-            -AI blackboard
+          - AI
+            - AI character blueprint (where brain is on what body)
+            - AI controller (senses and bit of brain)
+            - behaviour trees (logic)
+            - AI blackboard (memories)
         </section>
         <section data-markdown>
-          ##[setup enemy AI](https://docs.unrealengine.com/latest/INT/Engine/AI/BehaviorTrees/QuickStart/5/index.html)
-            - Create a new top down project.
-            -make new new folder for AI inside blueprints folder
-            -inside the folder make the following:
-              -AI Controller
-              -AI character blueprint
-              -AI blackboard
-              -AI behaviour tree
-              https://www.youtube.com/watch?v=h0Kb42oCoYg
-
+          ##Lab practice 1
+          Use character controller to move between path nodes (patrol)
         </section>
-      </section>
-      <section data-background="#0a2c2c">
-        <section data-markdown>
-          # Water
+        <section >
+          <h3>path nodes</h3>
+        <a href= "/~h517352/presentations/res/game-engines/l5Res/pathnodes.png" target="_blank"><img src="/~h517352/presentations/res/game-engines/l5Res/pathnodes.png"></a>
         </section>
         <section data-markdown>
-          To learn more about water, I want you to go to epic's launcher -> learn -> download and look at Water plane.
-          We will briefly look together in the class. You can use this in your courseworks, but you have to modify them a lot to make them yours! otherwise, what is the point?
+          ##Lab practice 2: [Behaviour tree](https://docs.unrealengine.com/latest/INT/Engine/AI/BehaviorTrees/QuickStart/5/index.html)
+            - Create a new Third person/Top down project.
+            - make new new folder for AI inside blueprints folder
+            - inside the folder make the following:
+              - AI Controller
+              - AI character blueprint
+              - AI blackboard
+              - AI behaviour tree
         </section>
-      </section>
-      <section data-background="#0a2c2c">
-        <section data-markdown>
-          # Foliage
+        <section >
+          <h3>behaviour tree</h3>
+        <a href= "/~h517352/presentations/res/game-engines/l5Res/aicontroller1.png" target="_blank"><img src="/~h517352/presentations/res/game-engines/l5Res/aicontroller1.png"></a>
         </section>
-        <section data-markdown>
-          - Cheap and easy way to add grass, trees, ... to your landscape.
-          - You can combine them in UE4 foliage tool, like add some bushes, then add trees.
+        <section >
+          <h3>BT random movement</h3>
+        <a href= "/~h517352/presentations/res/game-engines/l5Res/randompatrol.png" target="_blank"><img src="/~h517352/presentations/res/game-engines/l5Res/randompatrol.png"></a>
         </section>
-        <section data-markdown>
-          ## Procedural Foliage
-          ![Grass](/presentations/res/game-engines/l4Res/pFoliage.jpg)
-
-          Follow this [tutorial](https://docs.unrealengine.com/latest/INT/Engine/OpenWorldTools/ProceduralFoliage/QuickStart/1/index.html)
-        </section>
-
-        <section data-markdown>
-          ## Grass tool
-          ![Grass](https://docs.unrealengine.com/latest/images/Engine/OpenWorldTools/Grass/QuickStart/T_Grass_Intro.jpg)
-
-          Follow this [tutorial](https://docs.unrealengine.com/latest/INT/Engine/OpenWorldTools/Grass/QuickStart/) and add eye guzzling grass to your landscape
-        </section>
-      </section>
-      <section data-background="#0a2c2c">
-        <section data-markdown>
-          # Wind
-        </section>
-        <section data-markdown>
-          One way to make wind effect in your material is to use a expression called [SimpleGrassWind](https://docs.unrealengine.com/latest/INT/Engine/Rendering/Materials/Functions/Reference/WorldPositionOffset/)
-          Another easy way to produce this effect is to use panner and sin expressions.
-
-          You will have 5 minutes to find out by yourself, if you don't manage I will show you in the class.
-        </section>
-      </section>
-      <section data-background="#0a2c2c">
-        <section data-markdown>
-          #Blueprint
-        </section>
-        <section data-markdown data-background="#0f2a2e">
-          - [Level Blueprint](https://docs.unrealengine.com/latest/INT/Engine/Blueprints/UserGuide/Types/LevelBlueprint/index.html) Whole level, Global things... They called this Kismet in UE3. You also use this for Matinee and Cinematics.
-          - [Class Blueprint](https://docs.unrealengine.com/latest/INT/Engine/Blueprints/UserGuide/Types/ClassBlueprint/index.html) Each Actor can have one of these to make them alive.
-          - [Data-only Blueprint](https://docs.unrealengine.com/latest/INT/Engine/Blueprints/UserGuide/Types/ClassBlueprint/index.html#data-onlyblueprint) This is now Enumeration & User defined structure. List of names, health and what player picked us, last checkpoint...
-          - [Interface Blueprint](https://docs.unrealengine.com/latest/INT/Engine/Blueprints/UserGuide/Types/Interface/index.html) This a way to standardise your blue prints, for example to make sure all light blueprints have a function for switching on and off.
-          - [Macro Blueprint](https://docs.unrealengine.com/latest/INT/Engine/Blueprints/UserGuide/Types/MacroLibrary/index.html) Think about it as utilities ... use in many places ... like a function to measure distance between two actors. They have inputs and outputs.
-        </section>
-        <section data-markdown>
-          ##What events or things happen inside a level?
-        </section>
-        <section data-markdown>
-          - Player start
-          - Death, Birth (Spawn, respawn)
-          - Actors&Levels Ticks
-          - Sensing (proximity, becoming view target)
-          - Collisions, overlaps
-          - Keyboard, Mouse, VR, mobile inputs...
-        </section>
-      </section>
-      <section>
-        <section data-markdown>
-          ##Blueprints we look at today
-          - Level blueprints vs class blueprints
-          - Make things appear and disappear
-          - Light triggers
-          - Interactive doors
-      </section>
       </section>
       <section data-background="#ff2a32f">
         <section data-markdown>
           #Weekly assignment
         </section>
         <section data-markdown>
-          ![bothy](/presentations/res/game-engines/l4Res/bothy.jpeg)
-
-          Make this bothy for me please! or anything else you like. it should show you have learned everything we talked about today with some extras you will learn from tutorials!
-
+        Make a 3rd person or top down level with several enemies. Each should have different AI behaviours.
         </section>
         <section data-markdown>
           ###Assignment details
-          - Use different lightings
-          - Add blueprints to make lightings interactive
-          - Make some lights flicker
-          - Add some sliding doors
-          - Add some triggers to change/move things inside the bothy
-          - The bothy should be located in a landscape
-          - Use foliage tool and add trees and grass to your landscape
-          - Make sure you use Timeline, Rotators and other nodes and functions we discussed today, in your coursework.
+          - Make a quick level with some obstacles (boxes, stairs,...)
+          - create at least three enemies with distinctive AIs
+            - The spy: As soon as they find you, they follow you at a distance.
+            - The observer: One that stands as soon as they see you, they print something on the screen
+            - The shooter: One that shoots and damages the player health
+            - The Patrol: walks in a loop between pathnodes
         </section>
         <section data-markdown>
-          ##Watch list & Tutorials
-          - [Introduction](http://www.digitaltutors.com/tutorial/1688-Introduction-to-Blueprint-in-Unreal-Engine)
-          - [Construction script](http://www.digitaltutors.com/tutorial/2144-Introduction-to-Construction-Script-in-Unreal-Engine)
-          - [Foliage](https://docs.unrealengine.com/latest/INT/Engine/OpenWorldTools/ProceduralFoliage/QuickStart/1/index.html)
-          - [Grass](https://docs.unrealengine.com/latest/INT/Engine/OpenWorldTools/Grass/QuickStart/)
-          ###Additional
-          - [Creating parent and child blueprints](http://digitaltutors.com/tutorial/1861-Creating-Gameplay-Systems-using-Blueprint-Features-in-Unreal-Engine)
+          ###Further details
+          - Try to get your AIs to share information about the player and their state
+          - Try to add timers to your AI, so for instance they follow for 20 seconds and then they give up.
+          - Get the patrol AI to climb stairs and then jump down to go to the beginning
+          - How about other perceptions in your AI?
+        </section>
+        <section data-markdown>
+          ##Remember
+            - you need to be able to show your work to me in the next lab (14th of October 2016).
+            - Make lots of backups to ensure you won't loose your work.
+            - Ensure & rensure your project runs on the lab machines.
+            - Use comments to make your code clean and readable.
+            - Submit more images inside your blog, from inside each blueprint that you want to show me.
+            - You still need to submit a blog with several images, so I can mark your work.
+        </section>
+        <section>
+          <section data-markdown data-background="#222">
+            ##No more [watchlists!](https://lmddgtfy.net/?q=unreal%20engine%204%20behaviour%20tree%20tutorial)
+          </section>
         </section>
         <section data-markdown>
           ##Thanks and see you next week
-        </section>
 
+        </section>
       </section>
     </div>
 
   </div>
-  <script src="/presentations/js/vendor/reveal.js-master/lib/js/head.min.js"></script>
-  <script src="/presentations/js/vendor/jquery-1.11.3.min.js"></script>
-  <script src="/presentations/js/vendor/reveal.js-master/plugin/highlight/highlight.js"></script>
-  <script src="/presentations/js/vendor/reveal.js-master/plugin/markdown/marked.js"></script>
-  <script src="/presentations/js/vendor/reveal.js-master/plugin/markdown/markdown.js"></script>
-  <script src="/presentations/js/vendor/reveal.js-master/js/reveal.js"></script>
-  <script src="/presentations/js/vendor/reveal.js-master/plugin/zoom-js/zoom.js"></script>
-  <script src="/presentations/js/vendor/reveal.js-master/plugin/tagcloud/tagcloud.js"></script>
-  <script src="/presentations/js/vendor/reveal.js-master/plugin/notes/notes.js"></script>
+  <script src="/~h517352/presentations/js/vendor/reveal.js-master/lib/js/head.min.js"></script>
+  <script src="/~h517352/presentations/js/vendor/jquery-1.11.3.min.js"></script>
+  <script src="/~h517352/presentations/js/vendor/reveal.js-master/plugin/highlight/highlight.js"></script>
+  <script src="/~h517352/presentations/js/vendor/reveal.js-master/plugin/markdown/marked.js"></script>
+  <script src="/~h517352/presentations/js/vendor/reveal.js-master/plugin/markdown/markdown.js"></script>
+  <script src="/~h517352/presentations/js/vendor/reveal.js-master/js/reveal.js"></script>
+  <script src="/~h517352/presentations/js/vendor/reveal.js-master/plugin/zoom-js/zoom.js"></script>
+  <script src="/~h517352/presentations/js/vendor/reveal.js-master/plugin/tagcloud/tagcloud.js"></script>
+  <script src="/~h517352/presentations/js/vendor/reveal.js-master/plugin/notes/notes.js"></script>
   <script>
 
   Reveal.initialize({
@@ -238,11 +198,11 @@
     //                backgroundTransition: 'slide'
     // Zoom in and out with Alt+click
     dependencies: [
-      {src: '/presentations/js/vendor/reveal.js-master/plugin/zoom-js/zoom.js', async: true},
-      {src: '/presentations/js/vendor/reveal.js-master/plugin/highlight/highlight.js', async: true, callback: function () {
+      {src: '/~h517352/presentations/js/vendor/reveal.js-master/plugin/zoom-js/zoom.js', async: true},
+      {src: '/~h517352/presentations/js/vendor/reveal.js-master/plugin/highlight/highlight.js', async: true, callback: function () {
         hljs.initHighlightingOnLoad();
       }},
-      {src: '/presentations/js/vendor/reveal.js-master/plugin/tagcloud/tagcloud.js', async: true}
+      {src: '/~h517352/presentations/js/vendor/reveal.js-master/plugin/tagcloud/tagcloud.js', async: true}
 
     ]
   });
