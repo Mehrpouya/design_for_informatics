@@ -3,13 +3,15 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Lectorial six</title>
+
+  <title>Lectorial eight</title>
+
   <link rel="stylesheet" href="/~h517352/presentations/js/vendor/reveal.js-master/css/reveal.css">
   <link rel="stylesheet" href="/~h517352/presentations/js/vendor/reveal.js-master/css/theme/blood.css">
   <link rel="stylesheet" href="/~h517352/presentations/js/vendor/reveal.js-master/lib/css/zenburn.css">
   <link rel="stylesheet" href="/~h517352/presentations/css/style.css">
-  <link rel="stylesheet" href="/~h517352/presentations/css/style1.css">
 </head>
+
 <body>
 
   <div class="reveal">
@@ -20,7 +22,7 @@
         <h4>CMP207</h4>
         <h4>School of Arts, Media and Games</h4>
         <h2>Hadi Mehrpouya</h2>
-        <h2 class="date current">14th of October 2016</h2>
+        <h2 class="date current">28th of October</h2>
         <a href="http://www.abertay.ac.uk/"><img class="normImg" src="/~h517352/presentations/res/logos/abertay.png"></a>
       </section>
       <section data-background="#444">
@@ -29,62 +31,50 @@
         </section>
         <section>
           <div class="links">
-            <figure>
-              <a href="/~h517352/presentations/res/game-engines/l6Res/Adin_Holland_presentation.pptx" target="_blank"><img class="normImg" src="/~h517352/presentations/res/game-engines/ppt.png"></a>
-              <figcaption>Adin Holland</br>Rayman legends</figcaption>
-            </figure>
+              <figure>
+                  <a href="/~h517352/presentations/res/game-engines/l8Res/presentations/Andrew_Howells_Shadow_of_Mordor.pptx" target="_blank"><img class="normImg" src="/~h517352/presentations/res/game-engines/ppt.png"></a>
+                  <figcaption>Andrew Howells</br>Shadow of Mordor</figcaption>
+              </figure>
           </div>
         </section>
-        <section>
-<input type="button" id="trialButton" class="colorLightBlue trialBtn" value="Feedback time!" />
-<h2 id="counter" class="colorTextGreen">00:00:00</h2>
-</section>
       </section>
       <section data-background="#0f2a2e">
         <section data-markdown>
-          ##Last week
-          - AI
-          - Behaviour trees
+          ##Marking
         </section>
       </section>
       <section data-background="#0a2c2c">
         <section data-markdown>
           ## Today
-          - Cinematics
-            - Matinee
-            - Level sequence
-          - [Post processing effects](https://docs.unrealengine.com/latest/INT/Engine/Rendering/PostProcessEffects/)
-          - [Look development effects](https://docs.unrealengine.com/latest/INT/Resources/Showcases/Effects/)
+          - AI
+          - Custom effects
+          - Physics
         </section>
-        <section data-markdown>
-          ###Post processing effects
-          - Anti aliasing
-          - Tone mapping
-          - Bloom
-        </section>
-          <section data-markdown>
-            ###Development effects
-            - [Particle systems](https://docs.unrealengine.com/latest/INT/Engine/Rendering/ParticleSystems/Overview/index.html)
-            - Fog
-        </section>
-      </section>
-      <section data-background="#0a2c2c">
         <section data-markdown>
           ##Lab practice 1
-            1. Animate a door using matinee
-            2. Add a trigger box to your door to make it interactable
-            3. Animate a fly through camera through the level
-            4. Use a blueprint to play the Matinee at event play
-            5. Add multiple cameras to your matinee and use a director group to fade in and out and control which camera is being viewed
+          Use character controller to move between path nodes (patrol)
+        </section>
+        <section >
+          <h3>path nodes</h3>
+        <a href= "/~h517352/presentations/res/game-engines/l5Res/pathnodes.png" target="_blank"><img src="/~h517352/presentations/res/game-engines/l5Res/pathnodes.png"></a>
         </section>
         <section data-markdown>
-          ##Lab practice 2
-            develop practice 1 using level sequence
+          ##Lab practice 2: [Behaviour tree](https://docs.unrealengine.com/latest/INT/Engine/AI/BehaviorTrees/QuickStart/5/index.html)
+            - Create a new Third person/Top down project.
+            - make new new folder for AI inside blueprints folder
+            - inside the folder make the following:
+              - AI Controller
+              - AI character blueprint
+              - AI blackboard
+              - AI behaviour tree
         </section>
-        <section data-markdown>
-          ##Lab practice 3
-            - Add some customised particle systems to your level
-            - Add some fog effects to some areas in your level. Try to customise and use both atmospheric and exponential fogs
+        <section >
+          <h3>behaviour tree</h3>
+        <a href= "/~h517352/presentations/res/game-engines/l5Res/aicontroller1.png" target="_blank"><img src="/~h517352/presentations/res/game-engines/l5Res/aicontroller1.png"></a>
+        </section>
+        <section >
+          <h3>BT random movement</h3>
+        <a href= "/~h517352/presentations/res/game-engines/l5Res/randompatrol.png" target="_blank"><img src="/~h517352/presentations/res/game-engines/l5Res/randompatrol.png"></a>
         </section>
       </section>
       <section data-background="#ff2a32f">
@@ -92,34 +82,32 @@
           #Weekly assignment
         </section>
         <section data-markdown>
-          Make a multi store warehouse in 3rd person.
-          Add several CCTV cameras. Each should have different FOV and movements. Animate a character walking in front of one of the cameras
+        Make a 3rd person or top down level with several enemies. Each should have different AI behaviours.
         </section>
         <section data-markdown>
           ###Assignment details
-          - Start the level with showing the level from the CCTVs perspective
-            - Switch between the cameras, fade in&out
-            - After showing the level from the CCTVs, use a flythrough camera to move through your level and take us to the player character
-          - Create at least two CCTV cameras with distinctive animations
-          - Add customised particle systems to your level
+          - Make a quick level with some obstacles (boxes, stairs,...)
+          - create at least three enemies with distinctive AIs
+            - The spy: As soon as they find you, they follow you at a distance.
+            - The observer: One that stands as soon as they see you, they print something on the screen
+            - The shooter: One that shoots and damages the player health
+            - The Patrol: walks in a loop between pathnodes
         </section>
         <section data-markdown>
           ###Further details
-          - Spawn characters animate them through your level
-          - Add a control unit to your level that allows the player to switch and look through the CCTV cameras, for example when near the control panel and pressing key "E" on keyboard switch to camera 1 and "R" to camera 2
-            - You don't need a 3d model for controll unit, this can be simply a box with a blue texture on one side of it.
-          - Add a lift to your level
-            - Make the lift work with a trigger box
-            - Try to make the lift work with a button
-
+          - Try to get your AIs to share information about the player and their state
+          - Try to add timers to your AI, so for instance they follow for 20 seconds and then they give up.
+          - Get the patrol AI to climb stairs and then jump down to go to the beginning
+          - How about other perceptions in your AI?
         </section>
         <section data-markdown>
           ##Remember
-          - you need to be able to show your work to me in the next lab (28th of October 2016).
-          - Make lots of backups to ensure you won't loose your work.
-          - Ensure & rensure your project runs on the lab machines.
-          - Submit more images inside your blog, from inside each matinee/sequencer that you want to show me.
-          - You still need to submit a blog with several images, so I can mark your work.
+            - you need to be able to show your work to me in the next lab (14th of October 2016).
+            - Make lots of backups to ensure you won't loose your work.
+            - Ensure & rensure your project runs on the lab machines.
+            - Use comments to make your code clean and readable.
+            - Submit more images inside your blog, from inside each blueprint that you want to show me.
+            - You still need to submit a blog with several images, so I can mark your work.
         </section>
         <section>
           <section data-markdown data-background="#222">
@@ -128,12 +116,12 @@
         </section>
         <section data-markdown>
           ##Thanks and see you next week
+
         </section>
       </section>
     </div>
 
   </div>
-  <script src="/~h517352/presentations/js/vendor/jquery-3.1.0.min.js"  crossorigin="anonymous"></script>
   <script src="/~h517352/presentations/js/vendor/reveal.js-master/lib/js/head.min.js"></script>
   <script src="/~h517352/presentations/js/vendor/jquery-1.11.3.min.js"></script>
   <script src="/~h517352/presentations/js/vendor/reveal.js-master/plugin/highlight/highlight.js"></script>
@@ -143,7 +131,6 @@
   <script src="/~h517352/presentations/js/vendor/reveal.js-master/plugin/zoom-js/zoom.js"></script>
   <script src="/~h517352/presentations/js/vendor/reveal.js-master/plugin/tagcloud/tagcloud.js"></script>
   <script src="/~h517352/presentations/js/vendor/reveal.js-master/plugin/notes/notes.js"></script>
-  <script src="/~h517352/presentations/js/myTimer.js"></script>
   <script>
 
   Reveal.initialize({
