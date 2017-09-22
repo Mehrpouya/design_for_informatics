@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>Lecture one</title>
+
+  <link rel="stylesheet" href="/~h517352/presentations/css/style.css">
+  <link rel="stylesheet" href="/~h517352/presentations/js/vendor/reveal.js-master/css/reveal.css">
+  <link rel="stylesheet" href="/~h517352/presentations/js/vendor/reveal.js-master/css/theme/blood.css">
+  <link rel="stylesheet" href="/~h517352/presentations/js/vendor/reveal.js-master/lib/css/zenburn.css">
+  
+  <!-- <link rel="stylesheet" href="/~h517352/presentations/js/vendor/print/pdf.css"> -->
+</head>
+
+<body>
+
+  <div class="reveal">
+
+    <div class="slides">
+      <section class="hello" >
+        <h4 class="big-header">Game Engines and the Principles of Programming</h4>
+        <h4>DES105</h4>
+        <h4>School of Design and Informatics</h4>
+        <h4>Hadi Mehrpouya</h4>
+        <h4 class="date current">8th of September 2017</h4>
+        <a href="http://www.abertay.ac.uk/"><img class="normImg" src="/~h517352/presentations/res/logos/abertay.png"></a>
+      </section>
+      <section data-markdown data-background="#000">
+        ##How to navigate the slides
+        - **Keyboard:** using the arrow keys on your keyboard
+        - **Mouse:** by clicking on the red arrows at the bottom right of the screen.
+        - **Tablets:** sliding up, down, left and right. This may have resolution issues.
+      </section>
+      <section data-markdown data-background="#000">
+        ##Please note
+        - The arrow icons at the bottom right of the screen are showing the directions you can move to.
+        - If you press **Esc** on your keyboard this will show you the overall structure.
+        - Texts that are in red are [hyperlinks!](https://lmddgtfy.net/?q=hyperlink)
+      </section>
+      <section data-background="#0f2a2e">
+        <section >
+          <h2><a href="http://www.abertaysa.com/groups?group_type=club-society-914&group_cat=recreational&search=" target="_blank">Abertay Societies</a></h2>
+        </section>
+        <section data-markdown>
+          If you require books you can't find in the library, send me an email and I **might** be able to help!
+
+          ![Library](/~h517352/presentations/res/game-engines/l1Res/library.jpg)
+        </section>
+      </section>
+      <section data-background="#0f2a2e">
+        <section data-markdown>
+          ##What will we learn together?
+          - Overview of some of the existing game engines
+          - Game engine terminology and concepts
+          - Programming terminology and concepts
+          - Be able to apply this knowledge to practical applications (utilising game engines)
+        </section>
+        <section data-markdown>
+          ## How will we learn?
+          **Each week**
+          - **1 Lectorial**: lecture & tutorial per week
+          - **1 Practical**: 2 hours supervised activities.
+          - **Practice and personal study**: I recommend at least 7 hours weekly.
+        </section>
+        <section data-markdown>
+          ## Usual structure of a Lectorial session
+          - Introducing you to new concepts and theories
+          - Making sure you understand your practical activity for the lab session
+          - Catch up, raise and discuss any ongoing issues/concerns
+        </section>
+        <section data-markdown>
+          ## Usual structure of a Practical session
+          - 3 presentations by you, each about 5 minutes.
+          - we spend rest of our time on practicing & learning in the lab.
+        </section>
+        <section data-markdown>
+          ## Your 5 minutes presentation
+          - You only have to do it once, but you have to! unless you have a good reason not to.
+            - If you can't present, You will make the presentation and I will do it on your behalf.
+        </section>
+        <section data-markdown>
+          - Investigate a game of your choice
+          - Spend sometime on blogs and other internet sources to find out more about:
+            - What game engine was being used?
+            - Physics engine
+            - Specific characteristics of that engine/game
+          - Your own analysis and observation
+            - What did you think?
+          Your opinion is as important as the sources!
+        </section>
+        <section data-markdown>
+          - Lectorial and practical material will be on Blackboard prior or just after the lecture each week.
+          - Let's have a quick overview and look at [blackboard](https://blackboard.abertay.ac.uk/webapps/blackboard/content/listContentEditable.jsp?content_id=_455011_1&course_id=_7456_1).
+        </section>
+        <section data-markdown>
+          ##Advise
+          - Try to go through what we discussed in each lectorial on the same day.
+          - Aim to also watch the external recommended videos. (This will be at the end of each lectorial presentation)
+        </section>
+        <section >
+           <a href="https://en.wikipedia.org/wiki/Telepathy" target="_blank"><img src="/~h517352/presentations/res/game-engines/l1Res/pheobe.jpg"/></a>
+            </br>
+          If you need to speak to me, Email me to arrange a time outside lab time or Come and see me in the lab.
+        </section>
+        <section data-markdown>
+          ### Any Issues, Concerns or Questions
+          - @: h.mehrpouya at abertay dot ac dot uk
+        </section>
+
+        <section data-markdown>
+          #Questions? || Comments?
+        </section>
+        <section data-markdown>
+          ## If I miss or can't come to my own lab, can I join another one?
+        </section>
+        <section data-markdown>
+          ## Short answer no
+          There are currently 82 of you. The lab has limited number of PCs and if we don't stick with what the registry has designed and organised for us, we'll end up with chaos.
+        </section>
+        <section data-markdown>
+          ## Long answer yes
+          I'm happy to accommodate your needs and try to make this work for you. I appreciate you may have a **valid** reason to change your lab session, in this case you need to find someone from another DES105 lab to switch their place with you.
+
+          If you slept in, or missed the bus or trying to finish a game level before coming to the class, then you can come to the next lab, but we can't guarantee to be able to fit you in again due to class numbers.
+        </section>
+      </section>
+      <section data-background="#111100">
+        <section data-markdown>
+          ### Marking!
+          ![boris](/~h517352/presentations/abertay/des105/res/boris.jpg)
+        </section>
+        <section data-markdown>
+          - 100% final project.
+            - This will be a video uploaded somewhere online (Vimeo, youtube, ...) and you will upload the link as part of your submission
+            - Github link to your project source code
+            - Don't worry, we'll discuss all of these on week 3/4
+        </section>
+        <section data-markdown>
+          #Questions? || Comments?
+        </section>
+        <section data-markdown>
+          ## Why do we need to learn programming?
+        </section>
+        <section data-markdown data-background="#000">
+          ## Let's take a quick peek at Jobs in Game industry as Game designer
+          - [Riot games](https://www.riotgames.com/careers)
+          - [EA](https://career4.successfactors.com/career?career_ns=job_listing&company=EA&navBarLevel=JOB_SEARCH&rcm_site_locale=en_US&career_job_req_id=113256&jobPipeline=Indeed)
+          - [Root Robotics](http://root.applytojob.com/apply/job_20170807201257_KSR1OZWL6N9GXJYN/Game-Designer?source=INDE)
+          - [MTSi](https://careers-mtsi.icims.com/jobs/2420/unity-3d-artist-and-game-level-designer/job?mode=job&iis=Job+Board+-+Indeed.com&iisn=Indeed.com&mobile=false&width=1080&height=500&bga=true&needsRedirect=false&jan1offset=0&jun1offset=0)
+          - [Gravity Interactive](https://www.indeed.com/cmp/Gravity-Interactive/jobs/Game-Designer-b7a38e38825bd6ff?q=Game+Designer+unity)
+        </section>
+      </section>
+      <section data-background="#111122">
+        <section data-markdown>
+          ### My presentation of a game
+        </section>
+        <section data-markdown>
+          ### Which game does this video reminds you of?
+        </section>
+        <section >
+          <iframe src="https://player.vimeo.com/video/1854745?title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        </section>
+        <section >
+          <iframe <iframe width="560" height="315" src="https://www.youtube.com/embed/tBs5-WOtIpc?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+        </section>
+        <section >
+          <ul>
+            <li>
+              Jordan Mechner
+            </li>
+            <li>
+              <a href ="http://www.jordanmechner.com/archive/#2012-03-prince-of-persia-source-code-found">His dad composed the music for Prince of Persia and Karateka. He also found the lost source of Prince and sent it to his son.</a>
+            </li>
+            <li>
+            rotoscoping
+            </li>
+            <li>
+              <a href="http://www.mactrast.com/2012/04/prince-of-persia-original-source-code-found-and-posted-to-github/" target="_blank">Prince of Persia Original Source Code Found and Posted to Github</a>
+            </li>
+          </ul>
+        </section>
+      </section>
+
+        <section data-background="#000">
+        <section>
+          <iframe src="https://player.vimeo.com/video/86920129?title=0&byline=0" width="640" height="366" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        </section>
+        <section data-markdown>
+          ![Spectrum](/~h517352/presentations/res/game-engines/l1Res/ZX_Spectrum+.jpg)
+        </section>
+        <section data-markdown>
+          ![Spectrum](/~h517352/presentations/res/game-engines/l1Res/Commodore_64.jpg)
+        </section>
+        <section data-markdown>
+          ![Atari](/~h517352/presentations/res/game-engines/l1Res/Atari2600a.JPG)
+        </section>
+        <section data-markdown>
+          ![Micro genius](/~h517352/presentations/res/game-engines/l1Res/Micro_Genius.jpg)
+        </section>
+        <section data-markdown>
+          ![Sega](/~h517352/presentations/res/game-engines/l1Res/Sega-Mega.jpg)
+        </section>
+        <section data-markdown>
+          ![Sega](/~h517352/presentations/res/game-engines/l1Res/PS1.jpg)
+        </section>
+        <section tagcloud data-background="#0f2a2e">
+          AI
+          Pathfinding
+          Physics
+          Scripting languages
+          Terrain generation
+          Moulding
+          Texturing
+          Cinematics
+          Art pipeline
+        </section>
+      </section>
+      <section data-background="#0a2c2c">
+        <section data-markdown>
+          ## Download Unity
+          [![Unity download](/~h517352/presentations/abertay/des105/res/downloadUnity.png)](https://unity3d.com/get-unity/download)
+        </section>
+        <section >
+          <h4> Remember to stay with the same version of Unity until the end of this module unless instructed by me.</h4>
+          <h3><span style="color:red">Lab PC's has 2017.1.0f3</span></h3>
+          <strong> It is your responsibility to make sure your submission works on the University Lab machines.</strong>
+        </section>
+        <section data-markdown>
+          ### Now I will show you a few things inside Unity. These will be documented inside the practical document accessible via blackboard.
+        </section>
+      </section>
+        <section data-markdown>
+          ### Summary of your lab activity:
+          - Follow the practical document. This can be accessed via blackboard
+          - Spend sometime with the interface:
+            - Understand modular Unity interface and customise it.
+            - Remove some views and windows and try to add them back to the interface again.
+          - Learn and find out about some navigation shortcuts.
+          - Add, edit, group and remove some game objects and components to familiarise yourselves with them. Don't worry if you don't understand many of these yet.
+        </section>
+
+      <section data-background="#011">
+        <section >
+          <h4> As promissed here are some extra videos for you to watch:</h4>
+          <ul>
+            <li><a href="https://app.pluralsight.com/player?course=introduction-unity-5-2046&author=joshua-kinney&name=introduction-unity-5-2046-m2&clip=1&mode=live">
+              Creating and opening projects
+            </li></a>
+            <li><a href="https://unity3d.com/learn/tutorials/topics/interface-essentials/interface-overview?playlist=17090">
+                Interface Overview
+            </li></a>
+            <li><a href="https://unity3d.com/learn/tutorials/topics/interface-essentials/scene-view?playlist=17090">
+                  Scene View
+            </li></a>
+            <li><a href="https://unity3d.com/learn/tutorials/topics/interface-essentials/game-view?playlist=17090">
+                Game View
+            </li></a>
+            <li><a href="https://unity3d.com/learn/tutorials/topics/interface-essentials/hierarchy-window?playlist=17090">
+                  Hierarchy View
+            </li></a>
+            <li><a href="https://unity3d.com/learn/tutorials/topics/interface-essentials/project-window?playlist=17090">
+              Project Window
+            </li></a>
+            <li><a href="https://unity3d.com/learn/tutorials/topics/interface-essentials/inspector-window?playlist=17090">
+              Inspector Window
+            </li></a>
+            <li><a href="https://unity3d.com/learn/tutorials/topics/interface-essentials/build-and-player-settings?playlist=17090">
+              Build and player setting
+            </li></a>
+            </br>
+          </ul>
+
+          <h4>Also if you have time:</h4>
+          Watch Charile Brooker's:<a href="https://www.youtube.com/watch?v=_PKZCg5okDk">How Video Games Changed The World </a>
+
+        </section>
+        <section data-markdown>
+          ##3 Volunteers for next week's presentaiton? Or I can choose randomly?
+        </section>
+        <section data-markdown>
+          If you don't have Digital Tutors account, go and speak with library folks. It is a great learning resource and we'll be using some of their content for this module.
+        </section>
+        <section data-markdown data-background="#fff" class="normalisedImg">
+          ###Thank you, see you next week.
+          [![M.C. Escher](https://upload.wikimedia.org/wikipedia/en/6/66/Ascending_and_Descending.jpg)](https://en.wikipedia.org/wiki/Ascending_and_Descending)
+        </section>
+      </section>
+    </div>
+  </div>
+              <script src="/~h517352/presentations/js/vendor/reveal.js-master/lib/js/head.min.js"></script>
+              <script src="/~h517352/presentations/js/vendor/jquery-1.11.3.min.js"></script>
+              <script src="/~h517352/presentations/js/vendor/reveal.js-master/plugin/highlight/highlight.js"></script>
+              <script src="/~h517352/presentations/js/vendor/reveal.js-master/plugin/markdown/marked.js"></script>
+              <script src="/~h517352/presentations/js/vendor/reveal.js-master/plugin/markdown/markdown.js"></script>
+              <script src="/~h517352/presentations/js/vendor/reveal.js-master/js/reveal.js"></script>
+              <script src="/~h517352/presentations/js/vendor/reveal.js-master/plugin/zoom-js/zoom.js"></script>
+              <script src="/~h517352/presentations/js/vendor/reveal.js-master/plugin/tagcloud/tagcloud.js"></script>
+              <script src="/~h517352/presentations/js/vendor/reveal.js-master/plugin/notes/notes.js"></script>
+              <script>
+              Reveal.initialize({
+                history: true,
+                transition: 'slide',
+                // Display controls in the bottom right corner
+                controls: true,
+                // Display a presentation progress bar
+                progress: true,
+                // Enable keyboard shortcuts for navigation
+                keyboard: true,
+                // Enable the slide overview mode
+                overview: true,
+                // Vertical centering of slides
+                center: true,
+                // Enables touch navigation on devices with touch input
+                touch: true,
+                // Loop the presentation
+                loop: false,
+                // Change the presentation direction to be RTL
+                rtl: false,
+                // Turns fragments on and off globally
+                fragments: true,
+                // Flags if the presentation is running in an embedded mode,
+                // i.e. contained within a limited portion of the screen
+                embedded: false,
+                // Flags if we should show a help overlay when the questionmark
+                // key is pressed
+                help: true,
+                // Flags if speaker notes should be visible to all viewers
+                showNotes: false,
+                // Hides the address bar on mobile devices
+                hideAddressBar: true,
+                // Opens links in an iframe preview overlay
+                previewLinks: false,
+                transitionSpeed: 'slow',
+                //                backgroundTransition: 'slide'
+                // Zoom in and out with Alt+click
+                dependencies: [
+                  {src: '/~h517352/presentations/js/vendor/reveal.js-master/plugin/zoom-js/zoom.js', async: true},
+                  {src: '/~h517352/presentations/js/vendor/reveal.js-master/plugin/highlight/highlight.js', async: true, callback: function () {
+                    hljs.initHighlightingOnLoad();
+                  }},
+                  {src: '/~h517352/presentations/js/vendor/reveal.js-master/plugin/tagcloud/tagcloud.js', async: true}
+                ]
+              });
+              </script>
+
+            </body>
+            </html>
